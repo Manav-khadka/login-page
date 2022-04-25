@@ -21,10 +21,10 @@ class login extends StatelessWidget {
           child: Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
-                Colors.red,
+                Color.fromARGB(255, 248, 136, 128),
                 Color.fromARGB(255, 193, 247, 131)
               ])),
-              child: Column(
+              child: ListView(
                 children: [
                   SizedBox(
                     height: 20,
@@ -66,7 +66,14 @@ class login extends StatelessWidget {
                               hintText: 'Password',
                               labelStyle: TextStyle(fontSize: 20),
                             )),
-                      )
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      RaisedButton(
+                          child: Text("Login"),
+                          color: Color.fromARGB(255, 138, 212, 255),
+                          onPressed: () {}),
                     ],
                   ),
                 ],
